@@ -1,0 +1,11 @@
+<div *ngFor="let item of menu">
+    {{item.name}}
+</div>
+{{localString}}
+<router-outlet></router-outlet>
+<h2 highlight>Highlighted using directive</h2>
+
+<input #customRef type='text'>
+<button (click)='customClickEvent($event, customRef.value)'>Click here</button>
+
+<dependency-injection></dependency-injection>
